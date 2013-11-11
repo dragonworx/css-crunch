@@ -25,3 +25,8 @@ _(Nothing yet)_
 ## License
 Copyright (c) 2013 Ali Chamas  
 Licensed under the MIT license.
+=======
+css-crunch
+==========
+
+Crunches, optimizes and resolves/copies assets of css files
