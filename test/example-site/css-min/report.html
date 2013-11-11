@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>./test/example-site</title>
+    <style>
+        html, body {background-color:#0A0A0A;font-family:verdana,sans-serif;font-size:8pt;color:#ADADAD;}
+        span {display:inline-block;}
+        .log {color: #aaaaaa;}
+        .error {color: #c50010;}
+        .warn {color: #ff9200;}
+        .step {color: #8aaea7;font-weight:bold;}
+        .complete {color: #008000;}
+        h2 {color:#0b97c4;margin:0;padding:0;}
+        td {white-space: nowrap;}
+    </style>
+</head>
+<body>
+<h2>Options</h2>
+<pre><code class="options">{
+    "src": "./test/example-site",
+    "dest": "./test/example-site/css-min/style.min.css",
+    "exclude": [
+        "*min.css"
+    ],
+    "reporter": "html|console",
+    "minify": true,
+    "optimize": true,
+    "copy": true,
+    "sanitise": true,
+    "files": null
+}</code></pre>
+<h2>Processing</h2>
+<table>
+    <tr><td class='warn'><span style='width:0px'></span>excluded-file: style.min.css</td></tr>
+<tr><td class='complete'><span style='width:0px'></span>3 css files indexed</td></tr>
+<tr><td class='step'><span style='width:0px'></span>Cleaning: ./test/example-site/css-min</td></tr>
+<tr><td class='complete'><span style='width:0px'></span>1 file(s) cleaned</td></tr>
+<tr><td class='step'><span style='width:0px'></span>Cleaning: test\example-site\css-min\assets</td></tr>
+<tr><td class='complete'><span style='width:0px'></span>1 file(s) cleaned</td></tr>
+<tr><td class='step'><span style='width:0px'></span>Compiling...</td></tr>
+<tr><td class='log'><span style='width:50px'></span>Inline: %_test\example-site\css\a.css</td></tr>
+<tr><td class='log'><span style='width:50px'></span>Inline: %_test\example-site\css\b.css</td></tr>
+<tr><td class='log'><span style='width:100px'></span>Inline: %_test\example-site\css\subdir\c.css</td></tr>
+<tr><td class='log'><span style='width:100px'></span>Inline @import: %_C:\Users\Ali\Dev\css-crunch\test\d.css</td></tr>
+<tr><td class='log'><span style='width:150px'></span>Copy asset: url(images/image.png) = C:\Users\Ali\Dev\css-crunch\test\example-site\css\subdir\images\image.png >> assets/image.png = C:\Users\Ali\Dev\css-crunch\test\example-site\css-min\assets\image.png size: 600b</td></tr>
+<tr><td class='step'><span style='width:0px'></span>Minify (58.3% reduction)</td></tr>
+<tr><td class='step'><span style='width:0px'></span>Optimize (0.0% reduction)</td></tr>
+<tr><td class='step'><span style='width:0px'></span>File(s) copied: 1 to: test\example-site\css-min\assets</td></tr>
+<tr><td class='step'><span style='width:0px'></span>Save output: ./test/example-site/css-min/style.min.css</td></tr>
+</table>
+</body>
+</html>

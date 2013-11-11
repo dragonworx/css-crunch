@@ -1,0 +1,14 @@
+.c1 {
+	width: 40px;
+	height: 20px;
+	text-align: right;
+	background: url(images/image.png) no-repeat;
+	border: 1px solid red;
+	color: blue;
+}
+
+@import url(../../../d.css);
+
+.c2 {
+	color: lightBlue;
+}
