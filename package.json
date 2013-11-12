@@ -1,7 +1,7 @@
 {
   "name": "css-crunch",
   "description": "Crunches, optimizes and resolves/copies assets of css files",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/dragonworx/css-crunch",
   "author": {
     "name": "Ali Chamas",
